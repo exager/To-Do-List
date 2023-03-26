@@ -1,4 +1,10 @@
 let taskList = [];
+let taskAdded = document.getElementById("input-task");
+
+taskAdded.addEventListener("keypress",event => {
+  if(ev.key==='Enter')
+    addTask();
+});
 
 function addTask() {
   let input = document.getElementById("input-task").value;
